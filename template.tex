@@ -1,0 +1,122 @@
+\documentclass[man,12pt,floatsintext,apacite,noextraspace,longtable]{apa6} 
+
+\usepackage[utf8x]{inputenc} 
+\usepackage{graphicx} 
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{bbm}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb}
+\usepackage{amscd} 
+\usepackage{float} 
+\usepackage{mathtools}
+\usepackage{longtable}
+\usepackage{bm}
+\usepackage{geometry}
+\usepackage{color}
+\usepackage[amsmath,amsthm,thmmarks]{ntheorem} 
+\usepackage{rotating}
+\usepackage{setspace} 
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{paralist}
+\usepackage{wrapfig}
+\usepackage{framed}
+\usepackage{rotating}
+\usepackage{amsfonts,verbatim}
+\usepackage{tikz}
+\usepackage{lscape}
+
+% Shrink the longtables
+\renewcommand\arraystretch{0.5}
+
+% gt tables
+\usepackage{amsmath, booktabs, caption, longtable}
+
+% Auto-loads the algorithmic package
+% Details at: https://tex.stackexchange.com/questions/229355/algorithm-algorithmic-algorithmicx-algorithm2e-algpseudocode-confused
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{authblk}
+
+\DeclareDelayedFloatFlavor{sidewaystable}{table}
+\DeclareDelayedFloatFlavor{sidewaysfigure}{figure}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\renewcommand{\qedsymbol}{\blacksquare}
+\renewcommand*{\thethm}{\arabic{thm}}
+\geometry{left=1.in,right=1.in,top=1.in,bottom=1.in} 
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newcommand{\possessivecite}[1]{\citeuthor{#1}'s \citeyear{#1}}
+
+% Custom math shortcuts:
+
+% Q matrix references
+\def\qmat{\bm{Q}}
+\def\qstrat{\bm{Q}_s}
+\def\qload{\bm{q}_{js}}
+
+% Attribute profiles
+\def\attri{\bm{\alpha}_i}
+\def\attrc{\bm{\alpha}_c}
+
+% Strategy profiles
+\def\strati{\bm{\omega}_i}
+\def\strats{\bm{\omega}_s}
+
+% Polygamma name
+\def\pg{P\`{o}lya--gamma }
+
+% Guessing and slipping
+\setlength\parindent{24pt}
+
+\shorttitle{Page Running Head Title} 
+
+\title{Long Title of New Method}
+\author[1]{James Joseph Balamuta}
+%\author[2]{} 
+\affil[1]{Department of A \\ University of XYZ\\ email@univ.edu }
+%\affil[2]{}
+
+\abstract{Brief description of paper contents}
+\keywords{Bayesian}
+\affiliation{~} % required to re-enable paragraph indentation.
+
+\date{\today}
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+
+
+\section{Method}
+
+
+
+\section{Results}
+
+
+
+\section{Discussion}
+
+
+
+\bibliography{references}
+\appendix
+
+% Re-orient equations to the appendix they may be found in.
+
+\renewcommand{\theequation}{A\arabic{equation}}    
+% redefine the command that creates the equation no. 
+\setcounter{equation}{0}  % reset counter  
+
+\section{Derivation of ...}
+\label{appendix:values}
+
+  
+\end{document}
